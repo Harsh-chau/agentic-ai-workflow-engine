@@ -1,7 +1,7 @@
 # Agentic AI Workflow Engine: Autonomous Market Research & Data Synthesis Agent
 
 ## 🎯 The Business Problem I Solved
-In market intelligence, analysts spend hours manually searching for company data, calculating growth percentages, and compiling reports. I built an autonomous agent that does this in seconds. It takes a complex question like *"What is Tesla's revenue growth compared to last year, and what is 20% of that?"*, searches the web, calculates the math, and synthesizes a final report—all without human step-by-step guidance.
+In market intelligence, analysts spend hours manually searching for company data, calculating growth percentages, and compiling reports. I built an autonomous agent that does this in seconds. It takes a complex question like "What is Tesla's revenue growth compared to last year, and what is 20% of that?", searches the web, calculates the math, and synthesizes a final report—all without human step-by-step guidance.
 
 ## 🧠 My Unique Engineering Approach (What Makes This Different)
 
@@ -13,12 +13,13 @@ In market intelligence, analysts spend hours manually searching for company data
 | **ReAct Reasoning Loop** | The agent doesn't just "guess." It Thinks → Acts → Observes → Re-thinks, mirroring how a human analyst works. |
 
 ## 📊 Architecture at a Glance
+
 ```mermaid
 graph TD
-    A[User Query: "Tesla growth + 20% of that?"] --> B{Agent Thinks}
-    B --> C[Act: Search Web for Tesla Revenue]
-    C --> D[Observe: Gets Data]
-    D --> E[Act: Calculate 20% using Math Tool]
-    E --> F[Observe: Gets Result]
-    F --> G[Think: Synthesize Final Report]
-    G --> H[Output: Structured Answer]
+    A[User Question] --> B[Agent Thinks]
+    B --> C[Search Web]
+    C --> D[Get Data]
+    D --> E[Calculate Math]
+    E --> F[Get Result]
+    F --> G[Synthesize Report]
+    G --> H[Final Answer]
